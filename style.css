@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 90vh;
+  width: 70%;
+  background-color: #a5a5a5;
+}
+.logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #142270;
+}
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+input {
+  width: 50%;
+  max-width: 500px;
+  height: 2em;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 1.3em;
+}
+#signin {
+  width: 40%;
+  max-width: 500px;
+  padding: 10px;
+  background-color: #223ee0;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+#signin:hover {
+  background-color: #0f1a4b;
+}
+.label {
+  display: block;
+  font-weight: lighter;
+  color: #575151;
+  margin-top: 5px;
+  text-align: center;
+}
+.noAccount {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #837e7e;
+}
+
+#message {
+  color: red;
+  font-size: 1em;
+}
