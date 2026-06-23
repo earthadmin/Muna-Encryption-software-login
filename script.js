@@ -8,10 +8,12 @@ const showPassword = document.querySelector("#showPassword");
 // check if the email is empty
 signinButton.addEventListener("click", function () {
   if (email.value === "") {
-    message.textContent = "please enter your email address";
+    message.textContent = "Please Enter a Valid email address";
+    return;
   }
   if (password.value === "") {
-    message.textContent = "please enter your password";
+    message.textContent = "please Input your Password";
+    return;
   }
   if (
     email.value === "chris.nwasiwe@gmail.com" &&
@@ -23,6 +25,7 @@ signinButton.addEventListener("click", function () {
   } else {
     message.textContent = "Invalid email or password";
     message.style.color = "red";
+    return;
   }
 });
 
