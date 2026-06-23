@@ -3,14 +3,12 @@ const password = document.querySelector("#password");
 const signinButton = document.querySelector("#signin");
 const message = document.querySelector("#message");
 const label = document.querySelector("#label");
+const showPassword = document.querySelector("#showPassword");
 
 // check if the email is empty
 signinButton.addEventListener("click", function () {
   if (email.value === "") {
     message.textContent = "please enter your email address";
-  }
-  if (email.value === "@") {
-    message.textContent = "Provide a correct email address";
   }
   if (password.value === "") {
     message.textContent = "please enter your password";
@@ -25,5 +23,13 @@ signinButton.addEventListener("click", function () {
   } else {
     message.textContent = "Invalid email or password";
     message.style.color = "red";
+  }
+});
+
+showPassword.addEventListener("click", function () {
+  if (password.type === "password") {
+    password.type = "text";
+  } else {
+    password.type = "password";
   }
 });
